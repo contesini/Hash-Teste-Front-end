@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<script src="home.js">
+<script type="text/javascript" src="home.js">
 </script>
-
+<script type="text/javascript" src="../../services/rateService.js">
+</script>
+<script src="https://unpkg.com/mathjs@6.2.1/dist/math.min.js">
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>...</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title></title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="container-calc">
+            <h1><b> Simule sua Antecipação </b></h1>
+            <p class="label-top">Informe o valor da venda *</p>
+            <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="price" id="price">
+
+            <p class="label-top">Em quantas parcelas *</p>
+            <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="instalments" id="instalments">
+            <p class="label-bottom">Máximo de 12 parcelas</p>
+
+            <p class="label-top">Informe o percentual de MDR *</p>
+            <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="mdr" id="mdr">
+        </div>
+        <div class="container-result">
+            <p class="label-result-message"><b>Você receberá:</b></p>
+            <hr>
+            <p class="label-result">Amanhã: <b id="tomorrow">R$0,00</b></p>
+            <p class="label-result">Em 15 dias: <b id="fifteenthDay">R$0,00</b></p>
+            <p class="label-result">Em 30 dias: <b id="thirtiethDay">R$0,00</b></p>
+            <p class="label-result">Em 90 dias: <b id="ninetiethDay">R$0,00</b></p>
+        </div>
+    </div>
 </body>
 
 </html>
