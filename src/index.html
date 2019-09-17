@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<script type="text/javascript" src="home.js">
-</script>
-<script type="text/javascript" src="../../services/rateService.js">
+<script type="text/javascript" src="https://combinatronics.com/contesini/Hash-Teste-Front-end/master/src/services/rateService.js">
 </script>
 <script src="https://unpkg.com/mathjs@6.2.1/dist/math.min.js">
 </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="./views/home/home.css">
     <title></title>
 </head>
 
@@ -23,7 +22,8 @@
             <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="price" id="price">
 
             <p class="label-top">Em quantas parcelas *</p>
-            <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="instalments" id="instalments">
+            <input onchange="addEventCalculate()" onkeyup="addEventCalculate()" type="number" name="instalments"
+                id="instalments">
             <p class="label-bottom">Máximo de 12 parcelas</p>
 
             <p class="label-top">Informe o percentual de MDR *</p>

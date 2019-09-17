@@ -1,6 +1,7 @@
 # Hash Test Front End
 
-
+Live Preview here
+https://newagent-ff7b5.firebaseapp.com/
 
 
 ### Estrutura do projeto
@@ -12,7 +13,7 @@
     │       ├── view-name          
     │           └── view-name.html   # View html source
     │           └── view-name.js     # View js source
-    │           └── view-name.css   # View css source
+    │           └── view-name.css    # View css source
     └── ...
 
 
