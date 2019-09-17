@@ -15,7 +15,6 @@ function calculate(mdr, price, instalments) {
     var rate = 1.92
     var netPrice = price - mdr
     var portion = math.evaluate(netPrice / instalments)
-    console.log(math.evaluate(netPrice / instalments))
     var firstPortion = portion - rate
     var half = portion - (rate / 30 * 15)
     var secondPortion = portion - (rate * 2)
