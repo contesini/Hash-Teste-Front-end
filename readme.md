@@ -20,4 +20,8 @@ https://newagent-ff7b5.firebaseapp.com/
 ### Trade-off
 
 #### Uso de var ao invez de const
-Por falta de compatibilidade de const em navagadores das versão ie 6-10 optei por utilizar var ao invez de const
+Por falta de compatibilidade de const em navagadores das versão ie 6-10 optei por utilizar var ao invez de 
+
+#### Uso lib mathjs
+Mesmo usando a lib [mathjs](https://mathjs.org) ainda tive problemas com o calculo uma solução para esse problema
+seria criar uma api para realizar o calculo
