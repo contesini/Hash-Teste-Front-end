@@ -8,3 +8,5 @@ function init() {
 function main() {
     init()
 }
+
+init()
