@@ -1,7 +1,7 @@
 function addEventCalculate() {
-    var mdr = Number(document.getElementById('mdr').value)
-    var price = Number(document.getElementById('price').value)
-    var instalments = Number(document.getElementById('instalments').value)
+    var mdr = document.getElementById('mdr').value
+    var price = document.getElementById('price').value
+    var instalments = document.getElementById('instalments').value
     if (instalments > 12) {
         document.getElementById('instalments').value = 12
         instalments = 12
@@ -13,16 +13,16 @@ function addEventCalculate() {
 
 function calculate(mdr, price, instalments) {
     var rate = 1.92
-    var netPrice = price - mdr
+    var netPrice = math.evaluate(price - mdr)
     var portion = math.evaluate(netPrice / instalments)
-    var firstPortion = portion - rate
-    var half = portion - (rate / 30 * 15)
-    var secondPortion = portion - (rate * 2)
-    var thirdPortion = portion - (rate * 3)
-    changePriceValue('tomorrow', (firstPortion + secondPortion + thirdPortion))
-    changePriceValue('fifteenthDay', (half + secondPortion + thirdPortion))
-    changePriceValue('thirtiethDay', (firstPortion + secondPortion + portion))
-    changePriceValue('ninetiethDay', portion * 3)
+    var firstPortion = math.evaluate(portion - rate)
+    var half = portion - math.evaluate(rate / 30 * 15)
+    var secondPortion = math.evaluate(portion - (rate * 2))
+    var thirdPortion = math.evaluate(portion - (rate * 3))
+    changePriceValue('tomorrow', math.evaluate(firstPortion + secondPortion + thirdPortion))
+    changePriceValue('fifteenthDay', math.evaluate(half + secondPortion + thirdPortion))
+    changePriceValue('thirtiethDay', math.evaluate(firstPortion + secondPortion + portion))
+    changePriceValue('ninetiethDay', math.evaluate(portion * 3))
 }
 
 function changePriceValue(id, value) {
