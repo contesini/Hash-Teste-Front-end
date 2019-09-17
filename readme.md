@@ -7,14 +7,15 @@
     .
     ├── ...
     ├── src                          # Source
-    │   ├── service                  # Services
+    │   ├── service                  # Services    
     │   ├── views                    # Views
     │       ├── view-name          
-    │           └── unit             # View html source
-    │           └── unit             # View js source
+    │           └── view-name.html   # View html source
+    │           └── view-name.js     # View js source
+    │           └── view-name.css   # View css source
     └── ...
 
-    
+
 ### Trade-off
 
 #### Uso de var ao invez de const
